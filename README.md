@@ -1,12 +1,13 @@
 # PRODIGY_SD_04
-Implementing a sudoku solver
+Implementing a sudoku solver where the program create a grid with random number and gives the output of solved sudoku.
 
 M = 9
 def puzzle(a):
-	for i in range(M):
-		for j in range(M):
-			print(a[i][j],end = " ")
-		print()
+ for i in range(M):
+  for j in range(M):
+   print(a[i][j],end = " ")
+print()
+
 def solve(grid, row, col, num):
 	for x in range(9):
 		if grid[row][x] == num:
@@ -43,8 +44,8 @@ def Suduko(grid, row, col):
 				return True
 		grid[row][col] = 0
 	return False
- grid = [[2, 5, 0, 0, 3, 0, 9, 0, 1],
-        [0, 1, 0, 0, 0, 4, 0, 0, 0],
+ grid =       [[2, 5, 0, 0, 3, 0, 9, 0, 1],
+              [0, 1, 0, 0, 0, 4, 0, 0, 0],
 	      [4, 0, 7, 0, 0, 0, 2, 0, 8],
 	      [0, 0, 5, 2, 0, 0, 0, 0, 0],
 	      [0, 0, 0, 0, 9, 8, 1, 0, 0],
